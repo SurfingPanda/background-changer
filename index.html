@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+        <input type="text" id="bgColor" placeholder="Input text to change background color">
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <script>
+      const btnSubmit = document.querySelector('#submit');
+      
+
+      btnSubmit.addEventListener("click", function(){
+        let bgColor = document.getElementById('bgColor').value;
+        document.body.style.backgroundColor = bgColor;
+      })
+    </script>
+    
+  </body>
+</html>
